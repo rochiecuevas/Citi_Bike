@@ -8,23 +8,28 @@
     <!-- Bootstrap script -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- Custom CSS script -->
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+
 
     <title>Citi Bikes</title>
 </head>
 <body>
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-md-12">
-                <h1>Citi Bike Usage in New York (2018)</h1>
-                <p><a href = "https://www.citibikenyc.com/"><span style = "color: #003b70;"><b>Citi Bikes</b></span></a> is a bike rental program that allows bikers to undock a bike, ride it for as long as their passes are valid, then redock the bike at any Citi Bike station. Single passes are USD 3.00/trip; with each trip lasting up to 30 minutes.</p>
-                <p>This page attempts to get some insights into how people use Citi Bikes: Who uses Citi Bikes? Where do people go when they use Citi Bikes? What does Citi Bike station traffic flow look like on any given day in 2018? </p>
-                <p>Let's get started!</p>
-                <a href = "#destinations" class = "btn">Destinations</a>
-                <a href = "#bikers" class = "btn">Demographic</a>
-                <a href = "#traffic" class = "btn">Station Traffic</a>
+    <section id = "hero">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12">
+                    <h1>Citi Bike Usage in New York (2018)</h1>
+                    <p><a href = "https://www.citibikenyc.com/"><span style = "color: #003b70;"><b>Citi Bikes</b></span></a> is a bike rental program that allows bikers to undock a bike, ride it for as long as their passes are valid, then redock the bike at any Citi Bike station. Single passes are USD 3.00/trip; with each trip lasting up to 30 minutes.</p>
+                    <p>This page attempts to get some insights into how people use Citi Bikes: Who uses Citi Bikes? Where do people go when they use Citi Bikes? What does Citi Bike station traffic flow look like on any given day in 2018? </p>
+                    <p>Let's get started!</p>
+                    <a href = "#destinations" class = "btn">Destinations</a>
+                    <a href = "#bikers" class = "btn">Demographic</a>
+                    <a href = "#traffic" class = "btn">Station Traffic</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Dashboard 1: Destinations -->
     <section id = "destinations">
@@ -44,13 +49,14 @@
                             <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
                             <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
                         </object>
-                    </div>                
+                    </div> 
+                    <a href = "#hero" class = "btn">Return to top</a>
                         
-                    <script type='text/javascript'>                    
-                        var divElement = document.getElementById('viz1550138888044');                    
-                        var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    
-                        var scriptElement = document.createElement('script');                    
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';          vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1550138888044');
+                        var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='1000px';vizElement.style.height='827px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);
                     </script>
                 </div>
             </div>
@@ -81,12 +87,13 @@
                             <param name='display_count' value='yes' />
                         </object>
                     </div>
+                    <a href = "#hero" class = "btn">Return to top</a>
 
-                    <script type='text/javascript'>                    
-                        var divElement = document.getElementById('viz1550139226649');                    
-                        var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    
-                        var scriptElement = document.createElement('script');                    
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';          vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1550139226649');
+                        var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='1000px';vizElement.style.height='827px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);
                     </script>
                 </div>
             </div>
@@ -119,6 +126,7 @@
                             <param name='display_count' value='yes' />
                         </object>
                     </div>
+                    <a href = "#hero" class = "btn">Return to top</a>
 
                     <script type='text/javascript'>
                         var divElement = document.getElementById('viz1550139539627');
@@ -130,5 +138,16 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12">
+                    <h4>Photo attribution:</h4>
+                    <p><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@aginsbrook?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Anthony Ginsbrook"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Anthony Ginsbrook</span></a> Citi Bikes parked at the World Trade Centre, NY (2017). </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

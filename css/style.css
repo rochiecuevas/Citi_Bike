@@ -1,1 +1,18 @@
 /* Formatting */
+#hero {
+    /* Size of hero section */
+    width: 100vw;
+    height: 100vh;
+
+    /* Background image format */
+    background-image: url("../images/Citi_Bike.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Text style */
+    text-align: center;
+    color: white;
+
+}
