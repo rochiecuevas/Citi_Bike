@@ -5,7 +5,7 @@
     height: 100vh;
 
     /* Background image format */
-    background-image: url("../images/Citi_Bike.jpg");
+    background-image: linear-gradient(rgba(0, 59, 112, 0.7), rgba(0, 0, 0, 0.7)), url("../images/Citi_Bike.jpg"); /* Ateneo Blue (rgba 0, 59, 112) cast on the citi bikes to align with corporate branding */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,5 +14,43 @@
     /* Text style */
     text-align: center;
     color: white;
+}
 
+#hero h1 {
+    /* Text style for header */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    /* Text style */
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+#hero .btn {
+    /* Text style */
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+
+    /* Position */
+    display: inline-block;
+    width: 200px;
+
+    /* Button border */
+    border: 3px solid #00203d;
+    border-radius: 20px;
+
+    /* Button background */
+    background-color: #003B70;
+}
+
+#hero .btn:hover {
+    background-color:  #ac1e16;
+    border: 3px solid #951a13;
 }
