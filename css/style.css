@@ -62,6 +62,12 @@
     text-decoration: none;
 }
 
+.btn:hover {
+    background-color:  #ac1e16;
+    border: 1px solid transparent;
+    color: white;
+}
+
 footer {
     color: white;
     background-color: #193650;
