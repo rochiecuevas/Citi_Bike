@@ -54,3 +54,15 @@
     background-color:  #ac1e16;
     border: 3px solid #951a13;
 }
+
+.btn {
+    border: 3x solid #00203d;
+    background-color: #003B70;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    background-color: #193650;
+}
