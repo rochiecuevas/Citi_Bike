@@ -188,9 +188,20 @@
     <footer>
         <div class = "container">
             <div class = "row">
-                <div class = "col-md-12">
+                <div class = "col-md-4">
                     <h4>Photo attribution:</h4>
                     <p><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@aginsbrook?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Anthony Ginsbrook"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Anthony Ginsbrook</span></a> Citi Bikes parked at the World Trade Centre, NY (2017). </p>
+                </div>
+                <div class = "col-md-8">
+                    <h4>Data notes:</h4>
+                    <div class = "col-md-6">
+                        <p><span style = "color: #D9261C;"><b><i>Age.</i></b></span> The <a href = "https://www.citibikenyc.com/user-agreement-annual">minimum age</a> for using the Citi Bike in New York City is 16 years. Hence, all ages below 16 are excluded from the analysis. For older people, data on bike use by people <a href = "https://momentummag.com/like-riding-bike-even-years/">60–79 years old</a> is growing. However, <a href = "https://nhts.ornl.gov/det/Extraction3.aspx">2009 statistics</a> on bike use by people in their 80s indicate that they contribute far less than the other age groups to bike ridership, both in terms of number of trips and distance travelled. Hence, rides whose calculated ages are above 80 years are excluded from the analysis.</p>
+                        <p><span style = "color: #D9261C;"><b><i>Gender.</i></b></span> The Citi Bike data classifies rider gender as male, female, and unknown. To understand the differences in Citi Bike use between males and females, the trips whose riders have no gender information were excluded from the analysis.</p>
+                    </div>
+                    <div class = "col-md-6">
+                        <p><span style = "color: #D9261C;"><b><i>Trip duration.</i></b></span> Trips exceeding 180 mins were excluded from the analysis because: (1) it is unlikely that Citi Bike members would like to incur additional charges if they go well beyond their single or annual pass trip time allowances; (2) excessively long trips may be indicators of anomalies such as lost bikes or improper docking of bikes in stations. </p>
+                        <p>Trips shorter then 90 seconds were also excluded because these could possibly be registered by bikers redocking their bikes to ensure that the bikes were secure. Defective bikes, as implied by round trips to the same station within five minutes, are removed from the analysis as well.</p>
+                    </div>
                 </div>
             </div>
         </div>
