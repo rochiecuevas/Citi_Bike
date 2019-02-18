@@ -76,3 +76,18 @@ footer {
 footer .btn {
     background-color: #5C81A4;
 }
+
+.fa {
+    /* for font awesome icons */
+    color: #ac1e16; 
+    font-size: 20px; 
+    margin-right: 15px;
+}
+
+table {
+    font-size: 20px;
+}
+
+td {
+    height: 40px;
+}
